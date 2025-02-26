@@ -33,7 +33,7 @@ function Header() {
           onClick={toggleMenu} 
         />
         <div className={`menu ${menuOpen ? 'open' : ''}`}>
-          <Link className='Home' to="/">Home</Link>
+          <Link className='Home' to="/">Homes</Link>
           <Link className='Home' to="/about">API</Link>
           <input 
             value={text} 
