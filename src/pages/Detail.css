@@ -1,0 +1,92 @@
+.container-info {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .info-content {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  
+  .info-left img {
+    width: 70%;
+  }
+  
+  .info-right {
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .info-right img {
+    width: 100%;
+  }
+  
+  .ingredient {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .ingredient:hover {
+    transform: translateY(-15px); 
+  }
+  
+  .ingredient img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .ingredient p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: rgb(251, 248, 248);
+  }
+  .ingredient p:hover {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: rgb(227, 87, 16);
+  }
+  .ingredient p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: rgb(251, 248, 248);
+  }
+  .ingredient p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: rgb(251, 248, 248);
+  }
+  
+  
+  .loading {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .arrow-left{
+        width: 70px;
+    }
+    .arrow-right{
+        width: 70px;
+    }
+    .arrows{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .info-des {
+      margin-top: 30px;
+      padding: 20px;    
+      cursor: pointer;
+    }
