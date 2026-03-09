@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';
 import apiClient from '../axios/apiClient';
 import './Home.css';
 import ProductList from '../components/ProductList/ProductList';
@@ -15,11 +15,11 @@ import { Link } from 'react-router-dom';
 function Home() {
   const [products, setProducts] = useState([]);
   const [search, setSearch] = useState('');
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const handleKeyDown = (e) => {
     if (e.key === 'Enter' && search.trim()) {
-      navigate(`/search/${search}`); 
+      navigate(`/search/${search}`);
       setSearch('');
     }
   };
@@ -67,7 +67,7 @@ function Home() {
           placeholder='Search for a Meal..'
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          onKeyDown={handleKeyDown} 
+          onKeyDown={handleKeyDown}
         />
         <div className='icon'>
           <img src={icon1} alt='Meal Icon' />
